@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+.text-large {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    color: $greyish-brown;
+
+    @media all and (min-width: $bp-md) {
+        font-size: 24px;
+    }
+}
+
+.text-normal {
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3f3f3f;
+}
+
+.text-bold {
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3f3f3f;
+    font-weight: bold;
+}
+
+.c-green {
+    color: $sea;
+}
+
+.c-black-text {
+    color: $black-text;
+}

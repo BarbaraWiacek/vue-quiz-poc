@@ -1,0 +1,73 @@
+#app {
+    font-family: "Roboto", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.fadeIn-enter-active {
+    transition: opacity 0.5s ease-in;
+}
+
+.fadeIn-enter {
+    opacity: 0;
+}
+
+.fadeIn-enter-to {
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #e4e4e4;
+    border: 1px solid #aaa;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #fff;
+}
+#app {
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
+
+#nav {
+    padding: 30px;
+
+    a {
+        font-weight: bold;
+        color: #2c3e50;
+
+        span {
+            padding: 5px;
+        }
+
+        &:not(:last-child)::after {
+            content: "|";
+            display: inline;
+        }
+
+        &.router-link-exact-active span {
+            color: #42b983;
+        }
+    }
+}
